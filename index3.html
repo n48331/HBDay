@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HBDay</title>
+  <link rel='stylesheet' href='https://cdn3.devexpress.com/jslib/18.2.6/css/dx.common.css'>
+<link rel='stylesheet' href='https://cdn3.devexpress.com/jslib/18.2.6/css/dx.light.css'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+
+<ul id="charactersList">
+  <input
+      type="text"
+      name="searchBar"
+      id="searchBar"
+      placeholder="search for a character"
+  />
+  
+  
+
+
+
+
+  
+</ul>
+
+
+
+
+
+  <script>
+    
+
+  //////////////////
+  const charactersList = document.getElementById('charactersList');
+  const searchBar = document.getElementById('searchBar');
+  let hpCharacters = [];
+  
+  searchBar.addEventListener('keyup', (e) => {
+      const searchString = e.target.value.toLowerCase();
+  
+      const filteredCharacters = hpCharacters.filter((character) => {
+          return (
+              character.name.toLowerCase().includes(searchString) ||
+              character.house.toLowerCase().includes(searchString)
+          );
+      });
+      displayCharacters(filteredCharacters);
+  });
+  
+  const loadCharacters = async () => {
+      try {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+
+          hpCharacter =
+          [
+          {"name":"Nabeel",
+           "dateOfBirth":"Nov 14",
+           "image":"https://randomuser.me/api/portraits/men/32.jpg",
+           "mm": mm-11,
+          "dd": dd-14,
+          },
+          {"name":"Arjun",
+          "dateOfBirth":"Jun 16",
+          "image":"https://randomuser.me/api/portraits/men/32.jpg",
+          "mm": mm-6,
+          "dd": dd-16
+         },
+         {"name":"Alan",
+         "dateOfBirth":"Jan 03",
+         "image":"https://randomuser.me/api/portraits/men/32.jpg",
+         "mm": mm-1,
+         "dd": dd-3
+        },
+        {"name":"Melbin",
+        "dateOfBirth":"Dec 26",
+        "image":"https://randomuser.me/api/portraits/men/32.jpg",
+        "mm": mm-12,
+        "dd": dd-26
+       },
+          ]
+
+          const hpCharacters = hpCharacter.sort((a, b) => b.dd&b.mm - a.mm);
+          displayCharacters(hpCharacters);
+      } catch (err) {
+          console.error(err);
+      }
+  };
+  
+  const displayCharacters = (characters) => {
+      const htmlString = characters
+          .map((character) => {
+              return `
+
+              <li>
+                <img src=${character.image} alt="Mark Zuckerberg" class="leaderboard__picture">
+                <span class="leaderboard__name">${character.name}</span>
+                <span class="leaderboard__value">${character.dateOfBirth}</span>
+              </li>
+          `;
+          })
+          .join('');
+      charactersList.innerHTML = htmlString;
+     
+  };
+  
+  loadCharacters();
+
+
+
+</script>
+</body>
+</html>
