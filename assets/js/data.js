@@ -7,37 +7,36 @@ var over ='<i class="uil uil-check"></i>'
 var notOver ='<i class="uil uil-arrow-up"></i>'
 var bday = '<i class="uil uil-gift"></i>'
 var dayToday = mm*30+dd
-
+x=30
 var persons= [
     {
     "name":"Nabeel",
     "dateOfBirth":"Nov 14",
-    "image":"https://randomuser.me/api/portraits/men/32.jpg",
-    "over":10*30+14==dayToday?bday:notOver,
-    "day":10*30+14,
+    "image":"assets/img/profile1.jpg",
+    "over":10*x+14==dayToday?bday:notOver,
+    "day":10*x+14,
    },
    {
     "name":"Arjun",
     "dateOfBirth":"Jun 16",
-    "image":"https://randomuser.me/api/portraits/men/36.jpg",
-
-    "over":5*30+16==dayToday?bday:notOver,
-    "day":5*30+16,
+    "image":"assets/img/profile2.jpg",
+    "over":5*x+16==dayToday?bday:notOver,
+    "day":5*x+16,
    
   },
   {
     "name":"Alan",
     "dateOfBirth":"Jan 03",
-    "image":"https://randomuser.me/api/portraits/men/37.jpg",
-    "over":0*30+3==dayToday?bday:notOver,
-    "day":0*30+3,
+    "image":"assets/img/profile4.jpg",
+    "over":0*x+3==dayToday?bday:notOver,
+    "day":0*x+3,
   },
   {
     "name":"Melbin",
     "dateOfBirth":"Dec 26",
-    "image":"https://randomuser.me/api/portraits/men/32.jpg",
-    "over":11*30+26==dayToday?bday:notOver,
-    "day":11*30+26,
+    "image":"assets/img/profile4.jpg",
+    "over":11*x+26==dayToday?bday:notOver,
+    "day":11*x+26,
   },
 
 ]
