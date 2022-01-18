@@ -27,7 +27,7 @@ var persons= [
   {
     "name":"Alan",
     "dateOfBirth":"Jan 03",
-    "image":"assets/img/profile4.jpg",
+    "image":"assets/img/profile3.jpg",
     "over":0*x+3==dayToday?bday:notOver,
     "day":0*x+3,
   },
