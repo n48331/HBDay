@@ -6,8 +6,8 @@ var mm = parseInt(String(today.getMonth()).padStart(2, '0'));
 var over ='<i class="uil uil-check"></i>'
 var notOver ='<i class="uil uil-arrow-up"></i>'
 var bday = '<i class="uil uil-gift"></i>'
-var dayToday = mm*30+dd
 x=30
+var dayToday = mm*x+dd
 var persons= [
     {
     "name":"Nabeel",
