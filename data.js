@@ -1,6 +1,7 @@
 var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() +1).padStart(2, '0'); 
+
+var dd = parseInt(String(today.getDate()).padStart(2, '0'));
+var mm = parseInt(String(today.getMonth() +1).padStart(2, '0')); 
 
 var over ='<i class="uil uil-check"></i>'
 var notOver ='<i class="uil uil-arrow-up"></i>'
@@ -12,10 +13,10 @@ var persons= [
     "name":"Nabeel",
     "dateOfBirth":"Nov 14",
     "image":"https://randomuser.me/api/portraits/men/32.jpg",
-    "mm": mm-11,//
-    "dd": dd-14,
+    "mm": mm,
+    "dd": dd,
     "over":mm==11&&dd==15?over:notOver,
-    "day":(10*30+14),
+    "day":(11*30+14),
    },
    {
     "name":"Arjun",
@@ -24,7 +25,7 @@ var persons= [
     "mm": mm-6,//166
     "dd": dd-16,
     "over":mm==1&&dd==15?over:notOver,
-    "day":(5*30+16),
+    "day":(6*30+16),
    
   },
   {
@@ -34,7 +35,7 @@ var persons= [
     "mm": mm-1,//3
     "dd": dd-3,
     "over":mm==1&&dd==3?over:notOver,
-    "day":(0*30+3),
+    "day":(1*30+3),
   },
   {
     "name":"Melbin",
@@ -43,15 +44,15 @@ var persons= [
     "mm": mm-12,//356
     "dd": dd-26,
     "over":mm==1&&dd==15?over:notOver,
-    "day":(11*30+26),
+    "day":(12*30+26),
   },
 
 ]
 
 persons.sort((a, b)=> {
-  if (a.day>=dayToday) return 1;
-  else if(b.day>=dayToday) return -1;
-  else return a.day - b.day
+  if (!b.day<=dayToday && a.day<=dayToday) return 1;
+  else if(!a.day<=dayToday && b.day<=dayToday) return -1;
+  else return a.day - b.day;
 });
 
 
