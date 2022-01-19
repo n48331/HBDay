@@ -17,6 +17,13 @@ var persons= [
     "day":10*x+14,
    },
    {
+    "name":"Saurav",
+    "dateOfBirth":"Nov 02",
+    "image":"assets/img/profile5.jpg",
+    "over":10*x+2==dayToday?bday:notOver,
+    "day":10*x+2,
+   },
+   {
     "name":"Arjun",
     "dateOfBirth":"Jun 16",
     "image":"assets/img/profile2.jpg",
@@ -33,6 +40,20 @@ var persons= [
   },
   {
     "name":"Melbin",
+    "dateOfBirth":"Dec 26",
+    "image":"assets/img/profile4.jpg",
+    "over":11*x+26==dayToday?bday:notOver,
+    "day":11*x+26,
+  },
+  {
+    "name":"Sandesh",
+    "dateOfBirth":"Jan 17",
+    "image":"assets/img/profile7.jpg",
+    "over":0*x+17==dayToday?bday:notOver,
+    "day":0*x+17,
+  },
+  {
+    "name":"Ujwal",
     "dateOfBirth":"Dec 26",
     "image":"assets/img/profile4.jpg",
     "over":11*x+26==dayToday?bday:notOver,
