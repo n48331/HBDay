@@ -54,10 +54,10 @@ var persons= [
   },
   {
     "name":"Ujwal",
-    "dateOfBirth":"Dec 26",
-    "image":"assets/img/profile4.jpg",
-    "over":11*x+26==dayToday?bday:notOver,
-    "day":11*x+26,
+    "dateOfBirth":"Oct 24",
+    "image":"assets/img/profile9.jpg",
+    "over":09*x+24==dayToday?bday:notOver,
+    "day":09*x+24,
   },
 
 ]
