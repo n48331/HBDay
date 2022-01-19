@@ -59,7 +59,6 @@ var persons= [
     "over":09*x+24==dayToday?bday:notOver,
     "day":09*x+24,
   },
-<<<<<<< HEAD
   {
     "name":"Arun",
     "dateOfBirth":"Oct 31",
@@ -67,8 +66,6 @@ var persons= [
     "over":09*x+31==dayToday?bday:notOver,
     "day":09*x+31,
   },
-
-=======
 {
     "name":"Shameer",
     "dateOfBirth":"Feb 10",
@@ -83,7 +80,6 @@ var persons= [
     "over":06*x+3==dayToday?bday:notOver,
     "day":06*x+3,
   },
->>>>>>> 3e62618d1142238a99e02a8840146cadf281a260
 ]
 
 persons.sort((a, b)=> {
