@@ -59,6 +59,13 @@ var persons= [
     "over":09*x+24==dayToday?bday:notOver,
     "day":09*x+24,
   },
+  {
+    "name":"Arun",
+    "dateOfBirth":"Oct 31",
+    "image":"assets/img/profile6.jpg",
+    "over":09*x+31==dayToday?bday:notOver,
+    "day":09*x+31,
+  },
 
 ]
 
