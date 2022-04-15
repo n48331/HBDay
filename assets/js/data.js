@@ -84,8 +84,8 @@ var persons= [
     "name":"Minhaj",
     "dateOfBirth":"April 15",
     "image":"assets/img/profile3.jpg",
-    "over":06*x+3==dayToday?bday:notOver,
-    "day":06*x+3,
+    "over":03*x+15==dayToday?bday:notOver,
+    "day":03*x+15,
   },
 ]
 
