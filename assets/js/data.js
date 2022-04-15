@@ -80,6 +80,13 @@ var persons= [
     "over":06*x+3==dayToday?bday:notOver,
     "day":06*x+3,
   },
+    {
+    "name":"Minhaj",
+    "dateOfBirth":"April 15",
+    "image":"assets/img/profile3.jpg",
+    "over":06*x+3==dayToday?bday:notOver,
+    "day":06*x+3,
+  },
 ]
 
 persons.sort((a, b)=> {
