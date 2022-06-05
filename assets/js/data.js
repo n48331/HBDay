@@ -26,7 +26,7 @@ var persons = [
   {
     "name": "Nabeel",
     "dateOfBirth": "Nov 14",
-    "image": "assets/img/profile1.jpg",
+    "image": "https://avatars.dicebear.com/api/miniavs/nabeel.svg",
     "over": 10 * x + 14 == dayToday ? bday : notOver,
     "day": 10 * x + 14,
   },
