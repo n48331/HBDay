@@ -48,4 +48,3 @@ const displayCharacters = (characters) => {
 };
 
 loadCharacters();
-
