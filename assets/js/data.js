@@ -3,9 +3,18 @@ var today = new Date();
 var dd = parseInt(String(today.getDate()).padStart(2, "0"));
 var mm = parseInt(String(today.getMonth()).padStart(2, "0"));
 
-var over = '<i class="uil uil-check"></i>';
-var notOver = '<i class="uil uil-arrow-up"></i>';
-var bday = '<i class="uil uil-gift"></i>';
+// var over = '<i class="uil uil-check"></i>';
+// var notOver = '<i class="uil uil-arrow-up"></i>';
+// var bday = '<i class="uil uil-gift"></i>';
+var over = `<lottie-player
+src="https://assets6.lottiefiles.com/packages/lf20_to8oip6o.json"
+background="transparent" speed=".5" style="width: 50px;float:right;border:0;margin:0;padding:0" loop autoplay/>`;
+var notOver = `<lottie-player
+src="https://assets5.lottiefiles.com/packages/lf20_WWifl0Qmyq.json"
+ background="transparent" speed=".8" style="width: 50px;float:right;" loop autoplay/>`;
+var bday = `<lottie-player
+src="https://assets5.lottiefiles.com/datafiles/zc3XRzudyWE36ZBJr7PIkkqq0PFIrIBgp4ojqShI/newAnimation.json"
+mode="bounce" background="transparent" speed=".8" style="width: 50px;float:right;" loop autoplay/>`;
 var dayToday = setDay(mm, dd);
 
 const month = {
@@ -153,12 +162,20 @@ persons.sort((a, b) => {
 });
 
 if (persons[0].day > dayToday) {
-  persons[0].over = '<i class="uil uil-arrow-left"></i>';
+  persons[0].over = `<lottie-player
+  src="https://assets6.lottiefiles.com/packages/lf20_to8oip6o.json"
+  background="transparent" speed=".5" style="width: 50px;float:right;border:0;margin:0;padding:0" loop autoplay/>`;
+  // persons[0].over = '<i class="uil uil-arrow-left"></i>';
 }
 // persons[0].over ='<i class="uil uil-arrow-left"></i>'
 function check(a, today) {
-  var notOver = '<i class="uil uil-arrow-up"></i>';
-  var bday = '<i class="uil uil-gift"></i>';
+  var notOver = `<lottie-player
+  src="https://assets5.lottiefiles.com/packages/lf20_WWifl0Qmyq.json"
+   background="transparent" speed=".8" style="width: 50px;float:right;" loop autoplay/>`;
+  // var notOver = '<i class="uil uil-arrow-up"></i>';
+  var bday = `https://assets5.lottiefiles.com/datafiles/zc3XRzudyWE36ZBJr7PIkkqq0PFIrIBgp4ojqShI/newAnimation.json"
+  mode="bounce" background="transparent" speed=".8" style="width: 50px;float:right;" loop autoplay/>`;
+  // var bday = '<i class="uil uil-gift"></i>';
   if (a == today) return bday;
   else return notOver;
 }

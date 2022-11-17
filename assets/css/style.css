@@ -40,6 +40,9 @@ body {
 }
 
 .character>h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #979cb0;
   font-weight: 600;
   font-size: 18px;
