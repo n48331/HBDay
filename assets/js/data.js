@@ -68,6 +68,10 @@ const data = [
     dob: { mm: month.Oct, mmstr: "Oct", dd: 24 },
   },
   {
+    name: "Nafi",
+    dob: { mm: month.Oct, mmstr: "Oct", dd: 25 },
+  },
+  {
     name: "Arun",
     dob: { mm: month.Oct, mmstr: "Oct", dd: 31 },
   },
@@ -86,6 +90,46 @@ const data = [
   {
     name: "Fidha",
     dob: { mm: month.Nov, mmstr: "Nov", dd: 22 },
+  },
+  {
+    name: "Navas",
+    dob: { mm: month.Jan, mmstr: "Jan", dd: 3 },
+  },
+  {
+    name: "Aseeb",
+    dob: { mm: month.Jan, mmstr: "Jan", dd: 13 },
+  },
+  {
+    name: "Sneha",
+    dob: { mm: month.Jan, mmstr: "Jan", dd: 13 },
+  },
+  {
+    name: "Fouz",
+    dob: { mm: month.Dec, mmstr: "Dec", dd: 4 },
+  },
+  {
+    name: "Nihal",
+    dob: { mm: month.Dec, mmstr: "Dec", dd: 9 },
+  },
+  {
+    name: "Thaniya",
+    dob: { mm: month.Dec, mmstr: "Dec", dd: 22 },
+  },
+  {
+    name: "Famraz",
+    dob: { mm: month.April, mmstr: "April", dd: 18 },
+  },
+  {
+    name: "Malik",
+    dob: { mm: month.July, mmstr: "July", dd: 12 },
+  },
+  {
+    name: "Aflah",
+    dob: { mm: month.July, mmstr: "July", dd: 17 },
+  },
+  {
+    name: "Shiril",
+    dob: { mm: month.August, mmstr: "August", dd: 14 },
   },
 ];
 
