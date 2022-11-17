@@ -83,6 +83,10 @@ const data = [
     name: "Minhaj",
     dob: { mm: month.April, mmstr: "April", dd: 15 },
   },
+  {
+    name: "Fidha",
+    dob: { mm: month.Nov, mmstr: "Nov", dd: 22 },
+  },
 ];
 
 var imageLink = "https://avatars.dicebear.com/api/personas/";
