@@ -25,7 +25,7 @@ const month = {
   May: 4,
   June: 5,
   July: 6,
-  August: 7,
+  Aug: 7,
   Sept: 8,
   Oct: 9,
   Nov: 10,
@@ -138,7 +138,11 @@ const data = [
   },
   {
     name: "Shiril",
-    dob: { mm: month.August, mmstr: "August", dd: 14 },
+    dob: { mm: month.Aug, mmstr: "Aug", dd: 14 },
+  },
+  {
+    name: "Azeem",
+    dob: { mm: month.Nov, mmstr: "Nov", dd: 8 },
   },
 ];
 
