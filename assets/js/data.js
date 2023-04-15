@@ -54,7 +54,7 @@ const data = [
   },
   {
     name: "Saurav",
-    dob: { mm: month.Nov, mmstr: "Nov", dd: 02 },
+    dob: { mm: month.Nov, mmstr: "Nov", dd: 2 },
   },
   {
     name: "Arjun",
@@ -62,7 +62,7 @@ const data = [
   },
   {
     name: "Alan",
-    dob: { mm: month.Jan, mmstr: "Jan", dd: 03 },
+    dob: { mm: month.Jan, mmstr: "Jan", dd: 3 },
   },
   {
     name: "Melbin",
@@ -90,7 +90,7 @@ const data = [
   },
   {
     name: "Shahabas",
-    dob: { mm: month.July, mmstr: "Jul", dd: 03 },
+    dob: { mm: month.July, mmstr: "Jul", dd: 3 },
   },
   {
     name: "Minhaj",
@@ -144,7 +144,21 @@ const data = [
     name: "Azeem",
     dob: { mm: month.Nov, mmstr: "Nov", dd: 8 },
   },
+  {
+    name: "Shiril",
+    dob: { mm: month.Aug, mmstr: "Aug", dd: 14 },
+  },
+  {
+    name: "Fidha",
+    dob: { mm: month.Nov, mmstr: "Nov", dd: 22 },
+  },
+  {
+    name: "Thanu",
+    dob: { mm: month.April, mmstr: "April", dd: 28 },
+  },
 ];
+
+// TODO add more data
 
 var imageLink = "https://avatars.dicebear.com/api/personas/";
 var persons = [];
