@@ -136,10 +136,7 @@ const data = [
     name: "Aflah",
     dob: { mm: month.July, mmstr: "July", dd: 17 },
   },
-  {
-    name: "Shiril",
-    dob: { mm: month.Aug, mmstr: "Aug", dd: 14 },
-  },
+
   {
     name: "Azeem",
     dob: { mm: month.Nov, mmstr: "Nov", dd: 8 },
